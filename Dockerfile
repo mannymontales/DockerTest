@@ -4,7 +4,7 @@ FROM amazoncorretto:11.0.19
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy the compiled Java classes from the IntelliJ IDEA output directory which is the fuckin target into the container
+# need to review working dir and copying the path 
 #cant put the path to actual src code because i need to research it more
 COPY ./src/main/java/ /app
 
