@@ -2,7 +2,17 @@ package org.example;
 
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello docker run pls");
+        System.out.println("Hello docker: ");
+        int count = 0;
+        try {
+            while (true) {
+                Thread.sleep(1000);
+                System.out.println("still here iterating through: " + count++);
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        //System.out.println("Hello docker run pls");
     }
 }
 
